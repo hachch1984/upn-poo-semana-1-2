@@ -12,7 +12,7 @@ public class Calculadora {
     private final List<Operacion> historial;
 
     public Calculadora(String nombre) {
-        setNombre(nombre);
+        this.nombre = validarNombre(nombre);
         historial = new ArrayList<>();
     }
 
@@ -21,11 +21,15 @@ public class Calculadora {
     }
 
     public void setNombre(String nombre) {
+        this.nombre = validarNombre(nombre);
+    }
+
+    private static String validarNombre(String nombre) {
         if (nombre == null || nombre.isBlank()) {
             throw new IllegalArgumentException("El nombre de la calculadora es obligatorio.");
         }
 
-        this.nombre = nombre.trim();
+        return nombre.trim();
     }
 
     public double getUltimoResultado() {
