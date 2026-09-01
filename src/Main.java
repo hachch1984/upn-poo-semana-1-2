@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        Calculadora calculadora = new Calculadora("Calculadora UPN");
+        Calculadora calculadora = new Calculadora("Calculadora UPN, Grupo 11");
         int opcion;
 
         System.out.println("================================");
@@ -13,7 +13,7 @@ public class Main {
 
         do {
             mostrarMenu();
-            opcion = leerEntero(entrada, "Seleccione una opcion: ");
+            opcion = leerEntero(entrada, "Digite un código de opcion válido: ");
 
             if (opcion == 0) {
                 break;
@@ -25,7 +25,7 @@ public class Main {
             }
 
             if (opcion < 1 || opcion > 5) {
-                System.out.println("Opcion no valida. Intente nuevamente.\n");
+                System.out.println("Codigo de Opcion inválido. Intente nuevamente.\n");
                 continue;
             }
 
@@ -38,7 +38,7 @@ public class Main {
                     case 2 -> calculadora.restar(numero1, numero2);
                     case 3 -> calculadora.multiplicar(numero1, numero2);
                     case 4 -> calculadora.dividir(numero1, numero2);
-                    default -> throw new IllegalStateException("Opcion inesperada.");
+                    default -> throw new IllegalStateException("Código de Opcion no esperada.");
                 };
 
                 System.out.println("Resultado: " + resultado + "\n");
