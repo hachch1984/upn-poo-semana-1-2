@@ -4,11 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        Calculadora calculadora = new Calculadora();
+        Calculadora calculadora = new Calculadora("Calculadora UPN");
         int opcion;
 
         System.out.println("================================");
-        System.out.println("     CALCULADORA DE CONSOLA");
+        System.out.println("     " + calculadora.getNombre().toUpperCase());
         System.out.println("================================");
 
         do {
@@ -80,4 +80,3 @@ public class Main {
         }
     }
 }
-

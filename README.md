@@ -11,6 +11,13 @@ Tecnicas de Programacion Orientada a Objetos.
 - Division con validacion de division entre cero.
 - Lectura y validacion de datos desde la consola.
 
+## Conceptos de POO aplicados
+
+- Clase `Calculadora` con atributos privados.
+- Constructor para inicializar objetos.
+- Metodos de acceso `getNombre()` y `setNombre()`.
+- Encapsulamiento del ultimo resultado obtenido.
+
 ## Requisitos
 
 - JDK 17 o superior.
@@ -28,4 +35,3 @@ Tecnicas de Programacion Orientada a Objetos.
 javac -d bin src/*.java
 java -cp bin Main
 ```
-
