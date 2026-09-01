@@ -19,7 +19,12 @@ public class Main {
                 break;
             }
 
-            if (opcion < 1 || opcion > 4) {
+            if (opcion == 5) {
+                mostrarHistorial(calculadora);
+                continue;
+            }
+
+            if (opcion < 1 || opcion > 5) {
                 System.out.println("Opcion no valida. Intente nuevamente.\n");
                 continue;
             }
@@ -52,7 +57,22 @@ public class Main {
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
         System.out.println("4. Dividir");
+        System.out.println("5. Ver historial");
         System.out.println("0. Salir");
+    }
+
+    private static void mostrarHistorial(Calculadora calculadora) {
+        if (calculadora.getHistorial().isEmpty()) {
+            System.out.println("Todavia no hay operaciones en el historial.\n");
+            return;
+        }
+
+        System.out.println("\n--- HISTORIAL DE OPERACIONES ---");
+        for (int indice = 0; indice < calculadora.getHistorial().size(); indice++) {
+            Operacion operacion = calculadora.getHistorial().get(indice);
+            System.out.println((indice + 1) + ". " + operacion);
+        }
+        System.out.println();
     }
 
     private static int leerEntero(Scanner entrada, String mensaje) {

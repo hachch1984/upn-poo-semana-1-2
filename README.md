@@ -10,6 +10,7 @@ Tecnicas de Programacion Orientada a Objetos.
 - Multiplicacion.
 - Division con validacion de division entre cero.
 - Lectura y validacion de datos desde la consola.
+- Historial de las operaciones realizadas durante la ejecucion.
 
 ## Conceptos de POO aplicados
 
@@ -18,6 +19,7 @@ Tecnicas de Programacion Orientada a Objetos.
 - Metodos de acceso `getNombre()` y `setNombre()`.
 - Encapsulamiento del ultimo resultado obtenido.
 - Atributo y metodo `static` para contar las operaciones realizadas.
+- Coleccion encapsulada de objetos `Operacion` para representar el historial.
 
 ## Requisitos
 
