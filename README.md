@@ -55,3 +55,42 @@ Computacionales** de la **Universidad Privada del Norte (UPN)**.
 javac -d bin src/Calculadora.java src/Operacion.java src/Main.java
 java -cp bin Main
 ```
+
+## Como usar la aplicacion
+
+Al iniciar el programa se muestra el siguiente menu:
+
+| **Opcion** | **Accion**                                       |
+| :--------: | ------------------------------------------------ |
+| `1`        | Sumar dos numeros.                               |
+| `2`        | Restar el segundo numero al primero.             |
+| `3`        | Multiplicar dos numeros.                         |
+| `4`        | Dividir el primer numero entre el segundo.       |
+| `5`        | Mostrar el historial de operaciones de la sesion.|
+| `0`        | Mostrar el total de operaciones y salir.         |
+
+1. Escriba el numero de la opcion deseada y presione **Enter**.
+2. Para las opciones del `1` al `4`, ingrese el primer y el segundo numero cuando
+   el programa los solicite. Se aceptan numeros enteros y decimales con punto o coma.
+3. La calculadora mostrara el resultado y regresara automaticamente al menu principal.
+4. Use la opcion `5` para revisar las operaciones correctas realizadas durante la
+   ejecucion actual. Una division entre cero muestra un mensaje de error y no se
+   agrega al historial.
+5. Seleccione `0` para finalizar el programa.
+
+### Ejemplo de uso
+
+```text
+Seleccione una opcion: 1
+Ingrese el primer numero: 12.5
+Ingrese el segundo numero: 7.5
+Resultado: 20.0
+
+Seleccione una opcion: 5
+--- HISTORIAL DE OPERACIONES ---
+1. Suma: 12.5 + 7.5 = 20.0
+
+Seleccione una opcion: 0
+Operaciones realizadas: 1
+Gracias por utilizar la calculadora.
+```
