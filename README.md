@@ -1,7 +1,15 @@
 # Calculadora de consola - POO
 
-Proyecto Java desarrollado para la actividad de campo de las semanas 1 y 2 del curso
-Tecnicas de Programacion Orientada a Objetos.
+## Descripcion del proyecto
+
+Esta aplicacion es una calculadora interactiva desarrollada en Java que se ejecuta
+desde la consola. Permite realizar operaciones de suma, resta, multiplicacion y
+division, valida los datos ingresados, controla la division entre cero y conserva
+un historial de las operaciones realizadas durante la ejecucion.
+
+El proyecto fue desarrollado por el **Grupo 11** del curso **Tecnicas de Programacion
+Orientada a Objetos**, perteneciente a la carrera de **Ingenieria de Sistemas
+Computacionales** de la **Universidad Privada del Norte (UPN)**.
 
 ## Integrantes
 
