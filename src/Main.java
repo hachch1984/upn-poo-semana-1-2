@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        Calculadora calculadora = new Calculadora("Calculadora UPN, Grupo 11");
+        Calculadora calculadora = new Calculadora("Welcome to calculator UPN, Grupo 11");
         int opcion;
 
         System.out.println("================================");
