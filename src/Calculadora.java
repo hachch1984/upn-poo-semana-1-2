@@ -1,5 +1,7 @@
 public class Calculadora {
 
+    private static int totalOperaciones = 0;
+
     private String nombre;
     private double ultimoResultado;
     private boolean resultadoDisponible;
@@ -32,6 +34,10 @@ public class Calculadora {
         return resultadoDisponible;
     }
 
+    public static int getTotalOperaciones() {
+        return totalOperaciones;
+    }
+
     public double sumar(double numero1, double numero2) {
         return guardarResultado(numero1 + numero2);
     }
@@ -55,6 +61,7 @@ public class Calculadora {
     private double guardarResultado(double resultado) {
         ultimoResultado = resultado;
         resultadoDisponible = true;
+        totalOperaciones++;
         return resultado;
     }
 }

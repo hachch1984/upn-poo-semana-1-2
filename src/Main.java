@@ -42,6 +42,7 @@ public class Main {
             }
         } while (true);
 
+        System.out.println("Operaciones realizadas: " + Calculadora.getTotalOperaciones());
         System.out.println("Gracias por utilizar la calculadora.");
         entrada.close();
     }

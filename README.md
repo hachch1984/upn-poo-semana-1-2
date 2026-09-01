@@ -17,6 +17,7 @@ Tecnicas de Programacion Orientada a Objetos.
 - Constructor para inicializar objetos.
 - Metodos de acceso `getNombre()` y `setNombre()`.
 - Encapsulamiento del ultimo resultado obtenido.
+- Atributo y metodo `static` para contar las operaciones realizadas.
 
 ## Requisitos
 
