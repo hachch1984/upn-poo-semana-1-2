@@ -3,6 +3,15 @@
 Proyecto Java desarrollado para la actividad de campo de las semanas 1 y 2 del curso
 Tecnicas de Programacion Orientada a Objetos.
 
+## Integrantes
+
+| **Nombres y apellidos**                  |
+| :--------------------------------------- |
+| **INGRID KATHERIN BUSTAMANTE HINOJO**    |
+| **HENRY ALBERTO CHAVEZ CHAVEZ**          |
+| **CARLOS EDSON MONTERO AYALA**           |
+| **ANDREA NOEMI ZABALA DIAZ**             |
+
 ## Funciones iniciales
 
 - Suma.
