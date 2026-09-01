@@ -35,6 +35,6 @@ Tecnicas de Programacion Orientada a Objetos.
 ## Ejecutar desde la terminal
 
 ```powershell
-javac -d bin src/*.java
+javac -d bin src/Calculadora.java src/Operacion.java src/Main.java
 java -cp bin Main
 ```
